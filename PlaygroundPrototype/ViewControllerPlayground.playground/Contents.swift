@@ -1,15 +1,10 @@
-//
-//  ViewController.swift
-//  PlaygroundPrototype
-//
-//  Created by 韮澤賢三 on 2016/03/29.
-//  Copyright © 2016年 KenzoNirasawa. All rights reserved.
-//
+//: Playground - noun: a place where people can play
 
 import UIKit
 import SnapKit
 import Alamofire
 import SwiftyJSON
+import XCPlayground
 
 class ViewController: UIViewController {
     
@@ -19,15 +14,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .whiteColor()
         self.edgesForExtendedLayout = .None
+        self.view.backgroundColor = .whiteColor()
+        
         // Button1
         self.button1.frame = .zero
         self.button1.backgroundColor = .redColor()
         self.button1.setTitle("Kanto", forState: .Normal)
         self.button1.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.button1)
-        
+
         // Button2
         self.button2.frame = .zero
         self.button2.backgroundColor = .blueColor()
@@ -113,3 +109,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 }
+
+XCPlaygroundPage.currentPage.liveView = ViewController()
