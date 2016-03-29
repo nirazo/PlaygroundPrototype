@@ -1,0 +1,10 @@
+#Xcode
+xcuserdata
+.DS_Store
+
+# workspace
+*.xcworkspace
+!default.xcworkspace
+
+#CocoaPod
+/Pods/
